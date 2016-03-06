@@ -1,0 +1,51 @@
+{
+  "name": "front-end-js-testing",
+  "version": "0.0.0",
+  "description": "Starter project to demonstrate webdriver.io",
+  "main": "index.js",
+  "scripts": {
+    "global-install": "npm i --global selenium-standalone@5.0.0 http-server@0.9.0 && selenium-standalone install",
+    "server": "http-server ./static -p 8888 -c-1",
+    "build": "webpack --config webpack.conf.js",
+    "build-dev": "npm run server & webpack --config webpack.conf.js --watch",
+    "start-selenium-server": "selenium-standalone start",
+    "test": "npm run integration-test && npm run unit-test",
+    "unit-test": "karma start karma.conf.js --single-run --no-auto-watch",
+    "unit-test-background": "karma start karma.conf.js",
+    "integration-test": "wdio ./wdio.conf.js"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "karma": "^0.13.8",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-mocha": "^0.2.0",
+    "karma-sinon-chai": "^1.0.0",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.2",
+    "sinon-chai": "^2.8.0",
+    "wdio-mocha-framework": "^0.2.11",
+    "webdriverio": "^3.4.0",
+    "webpack": "^1.12.14"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bguiz/front-end-js-testing.git"
+  },
+  "keywords": [
+    "webdriver",
+    "webdriverio",
+    "selenium",
+    "integration",
+    "testing"
+  ],
+  "author": "bguiz",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/bguiz/front-end-js-testing/issues"
+  },
+  "homepage": "https://github.com/bguiz/front-end-js-testing#readme"
+}
