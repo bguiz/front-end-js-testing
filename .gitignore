@@ -1,0 +1,4 @@
+/node_modules
+/test/out/screens/*
+/static/client.js
+/static/client.js.map
