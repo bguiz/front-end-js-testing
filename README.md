@@ -2,13 +2,16 @@
 
 Goals:
 
-1. Unit tests
-2. Integrations tests
+1. Unit testing
+2. Integrations testing
 
 The libraries used for both of them have been
 kept as similar as possible to each other.
 In fact, only the runner library differs,
 but the framework and assertions libraries used are the same.
+
+This module aims to be a reference/ starter
+for a testable front-end Javascript application.
 
 ## Unit testing
 
