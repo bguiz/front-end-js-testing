@@ -1,6 +1,6 @@
 {
   "name": "front-end-js-testing",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Starter project to demonstrate webdriver.io",
   "main": "index.js",
   "scripts": {
